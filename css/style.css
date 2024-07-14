@@ -55,13 +55,14 @@ a {
 div.main-content {
     margin: 3vh 30vw;
     padding: 3vh 2.5vw;
-    border-radius: 5vw;
+    border-radius: 1vw;
+    border-style: double;
     background-color: #ffffff;
 }
 
 div.splash {
     position: top;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden; 
     margin: 0 0 3vh;
@@ -99,13 +100,12 @@ div.splash div p {
 
 header {
     position: fixed;
-    top: 0;
+    top: 5vh;
     right: 0;
     z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5vh 0 5vh 10vw;
     border-radius: 5em 0 0 5em;
     background-color: #ffffff;
     padding: 1em;
@@ -118,6 +118,7 @@ header button.logo {
     overflow: hidden;
     border: 0;
     background: none;
+    margin: 0 1vw;
 }
 header button.logo:hover {
     filter: opacity(50%);
@@ -128,10 +129,22 @@ header button.logo img {
     object-fit: cover;
 }
 header nav {
-    margin: 0% 2.5%;
+    margin: 0% 3%;
     display: flex;
     gap: 1em;
     white-space: nowrap;
+}
+header nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5vw;
+
+}
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
 }
 header nav button {
     margin: 0 0.5%;
