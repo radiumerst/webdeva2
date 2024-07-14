@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffce99;
+}
+p {
+    font-size: 1vw;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    color: #000000;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+}
+h1.description {
+    margin: 0 0 3vh 0;
+    font-size: 1.5vw;
+}
+h2 {
+    color: #000000;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+}
+h3 {
+    color: #000000;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25vw;
+}
+hr {
+    border: 0;
+    border-top: 3px dotted #bbb;
+    height: 1px;
+    margin: 20px 10em;
+    border-color: #000000;
+}
+a {
+    text-decoration: none;
+}
+
+.subpage {
+    display: none;
+}
+
+div.main-content {
+    margin: 3vh 30vw;
+    padding: 3vh 2.5vw;
+    border-radius: 5vw;
+    background-color: #ffffff;
+}
+
+div.splash {
+    position: top;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0 0 3vh;
+}
+div.splash img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+div.splash div
+{
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+div.splash div h1 {
+    font-size: 3vw;
+    color: #ffffff;
+}
+div.splash div p {
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh 0 5vh 10vw;
+    border-radius: 5em 0 0 5em;
+    background-color: #ffffff;
+    padding: 1em;
+}
+header button.logo {
+    display: block;
+    width: 15vw;
+    max-width: 300px;
+    aspect-ratio: 1082 / 400;
+    overflow: hidden;
+    border: 0;
+    background: none;
+}
+header button.logo:hover {
+    filter: opacity(50%);
+}
+header button.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header nav {
+    margin: 0% 2.5%;
+    display: flex;
+    gap: 1em;
+    white-space: nowrap;
+}
+header nav button {
+    margin: 0 0.5%;
+    padding: 0.5em;
+    border: 0;
+    border-radius: 10em;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #366fc9;
+    transition: background-color 0.3s ease;
+    flex-shrink: 1;
+    text-align: center;
+}
+header nav button:hover {
+    background-color: #458dff;
+}
+
+footer {
+    width: 100%;
+    margin: 3vh 0 0 0;
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+@media screen and (max-width: 540px) {
+
+}
