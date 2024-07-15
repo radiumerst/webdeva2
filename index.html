@@ -9,24 +9,26 @@
     <script src="script/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="navBar">
         <div>
             <button class="logo" onclick="showSubpage('home')"><img alt="Website logo" src="images/signature.png"></button>
         </div>
         <nav>
-            <!-- <button onclick="showSubpage('home')">Home</button>
-            <button onclick="showSubpage('subpage1')">Tips</button>
-            <button onclick="showSubpage('subpage1')">Tips</button>
-            <button onclick="showSubpage('subpage1')">Tips</button>
-            <button onclick="showSubpage('subpage1')">Tips</button> -->
             <ul>
                 <li><button onclick="showSubpage('home')">Home</button></li>
-                <li><button onclick="showSubpage('subpage1')">Must Knows</button></li>
-                <li><button onclick="showSubpage('subpage1')">Locations</button></li>
-                <li><button onclick="showSubpage('subpage1')">Before You Travel</button></li>
+                <li><button onclick="showSubpage('mustknow')">Must Knows</button></li>
+                <li><button onclick="showSubpage('places')">Locations</button></li>
+                <li><button onclick="showSubpage('beforetravel')">Before You Travel</button></li>
             </ul>
         </nav>
     </header>
+    <!--
+    <button onclick="scrollToTopSmooth()" id="backToTopBtn" class="backToTop">
+
+    </button>
+-->
+    
+    <!--Home Page-->
     <div id="home" class="subpage">
         <div class="splash">
             <img alt="Photo of myself at Asakusa" src="images/splash-image.jpg">
@@ -35,13 +37,58 @@
                 <p>日本語を分かりますか？</p>
             </div>
         </div>
-        <div class="main-content">
+        <div class="small-content">
             <div class="flex-container">
-                <div>
-                    <h2>About this site</h2>
-                    <p>I am an avid Japan enjoyer who wants to share more about my experiences and some top places to go to!</p>
-                    <p>Test test more text</p>
-                </div>
+                <h2>About this site</h2>
+                <p>I am an avid Japan enjoyer who wants to share more about my experiences and some top places to go to!</p>
+                <p>Test test more text</p>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <button class="scrollBtn leftBtn" id="galleryLeftBtn">&#9664;</button>
+            <div class="gallery" id="gallery">
+                <img alt="PLACEHOLDER" src="images/splash-image.jpg">
+                <img alt="PLACEHOLDER" src="images/signature.png">
+                <img alt="PLACEHOLDER" src="images/splash-image.jpg">
+                <img alt="PLACEHOLDER" src="images/signature.png">
+                <img alt="PLACEHOLDER" src="images/splash-image.jpg">
+            </div>
+            <button class="scrollBtn rightBtn" id="galleryRightBtn">&#9654;</button>
+        </div>
+    </div>
+
+    <!--Must Know Page-->
+    <div id="mustknow" class="subpage">
+        <div class="splash">
+            <img alt="Photo of ..." src="images/splash-image.jpg">
+            <div>
+                <h1>Japan's Must Knows</h1>
+                <p>Important things for you to know about Japan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Locations Page-->
+    <div id="places" class="subpage">
+        <div class="splash">
+            <img alt="Photo of ..." src="images/splash-image.jpg">
+            <div>
+                <h1>Japan's Places</h1>
+                <p>Some recommended spots for you to go!</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Test</h2>
+        </div>
+    </div>
+
+    <!--Before You Travel Page-->
+    <div id="beforetravel" class="subpage">
+        <div class="splash">
+            <img alt="Photo of ..." src="images/splash-image.jpg">
+            <div>
+                <h1>Before You Travel</h1>
+                <p>Some things you have to check and complete before travelling.</p>
             </div>
         </div>
     </div>

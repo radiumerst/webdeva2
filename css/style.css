@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffce99;
+    background-color: #ffadad;
 }
 p {
     font-size: 1vw;
@@ -53,11 +53,54 @@ a {
 }
 
 div.main-content {
-    margin: 3vh 30vw;
+    margin: 5vh 5vw;
     padding: 3vh 2.5vw;
     border-radius: 1vw;
     border-style: double;
     background-color: #ffffff;
+}
+div.small-content {
+    margin: 5vh 30vw;
+    padding: 3vh 2.5vw;
+    border-radius: 1vw;
+    border-style: double;
+    background-color: #ffffff;
+}
+
+div.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+div.gallery-container button.scrollBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+div.gallery-container button.leftBtn {
+    left: 10px;
+}
+div.gallery-container button.rightBtn {
+    right: 10px;
+}
+div.gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
 div.splash {
@@ -96,8 +139,6 @@ div.splash div p {
     color: #ffffff;
 }
 
-
-
 header {
     position: fixed;
     top: 5vh;
@@ -109,6 +150,14 @@ header {
     border-radius: 5em 0 0 5em;
     background-color: #ffffff;
     padding: 1em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+header.show {
+    opacity: 1;
+    visibility: visible;
+
 }
 header button.logo {
     display: block;
@@ -162,6 +211,9 @@ header nav button {
 }
 header nav button:hover {
     background-color: #458dff;
+}
+button.backToTop {
+
 }
 
 footer {
