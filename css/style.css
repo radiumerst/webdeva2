@@ -67,6 +67,36 @@ div.small-content {
     background-color: #ffffff;
 }
 
+div.multi-tab-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "sidebar body body"
+    "footer footer footer";
+}
+div.multi-tab-grid div.content {
+    grid-area: body;
+    background-color: #00ff00;
+}
+div.multi-tab-grid div.sidebar {
+    grid-area: sidebar;
+    justify-items: center;
+    align-items: center;
+    background-color: #888888;
+}
+div.multi-tab-grid div.header {
+    grid-area: header;
+    justify-items: center;
+    align-items: center;
+    background-color: #ff0000;
+}
+div.multi-tab-grid div.footer {
+    grid-area: footer;
+    background-color: #0000ff;
+}
+
 div.gallery-container {
     position: relative;
     width: 80%;
