@@ -14,7 +14,7 @@ p {
 h1 {
     margin: 0;
     color: #000000;
-    text-wrap: nowrap;
+    text-wrap: nowrap;  
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3vw;
@@ -177,7 +177,6 @@ header {
 header.show {
     opacity: 1;
     visibility: visible;
-
 }
 header button.logo {
     display: block;
@@ -233,7 +232,25 @@ header nav button:hover {
     background-color: #458dff;
 }
 button.backToTop {
-
+    position: fixed;
+    right: 2.5vh;
+    bottom: 2.5vh;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid;
+    border-width: 1px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+button.backToTop.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 footer {
@@ -243,6 +260,6 @@ footer {
     padding: 1em;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 800px) {
 
 }

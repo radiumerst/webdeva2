@@ -33,11 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show navbar only when user has scrolled down
     const headerDiv = document.getElementById('navBar');
+    const backToTopBtn = document.getElementById('backToTopBtn');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 10) {
             headerDiv.classList.add('show');
+            backToTopBtn.classList.add('show');
         } else {
             headerDiv.classList.remove('show');
+            backToTopBtn.classList.remove('show');
         }
     });
 
@@ -65,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const indicators = indicatorsContainer.getElementsByClassName('indicator');
 
     function updateGalleryPosition() {
-        const imageWidth = images[0].clientWidth + 10;
+        const imageWidth = images[0].clientWidth + 10; // Include margin-right
         gallery.style.transform = `translateX(${-currentIndex * imageWidth}px)`;
 
         // Update indicators
