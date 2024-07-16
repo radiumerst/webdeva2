@@ -92,15 +92,35 @@ div.gallery-container button.leftBtn {
 div.gallery-container button.rightBtn {
     right: 10px;
 }
-div.gallery {
+div.gallery-container div.gallery {
     display: flex;
     transition: transform 0.5s ease;
 }
-div.gallery img {
+div.gallery-container div.gallery img {
     width: 100%;
     height: auto;
     flex-shrink: 0;
     margin-right: 10px;
+}
+div.gallery-container div.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+div.gallery-container div.indicators div.indicator {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+div.gallery-container div.indicators div.indicator.active {
+    background-color: #333;
 }
 
 div.splash {
