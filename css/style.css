@@ -69,12 +69,12 @@ div.small-content {
 
 div.multi-tab-grid {
     display: grid;
-    grid-template-columns: 120px 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "sidebar body body"
-    "footer footer footer";
+    "header header"
+    "sidebar body"
+    "footer footer";
 }
 div.multi-tab-grid div.content {
     grid-area: body;
@@ -82,14 +82,11 @@ div.multi-tab-grid div.content {
 }
 div.multi-tab-grid div.sidebar {
     grid-area: sidebar;
-    justify-items: center;
-    align-items: center;
+    display: flexbox;
     background-color: #888888;
 }
 div.multi-tab-grid div.header {
     grid-area: header;
-    justify-items: center;
-    align-items: center;
     background-color: #ff0000;
 }
 div.multi-tab-grid div.footer {
@@ -191,13 +188,13 @@ div.splash div p {
 
 header {
     position: fixed;
-    top: 5vh;
+    top: 0;
     right: 0;
     z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5em 0 0 5em;
+    border-radius: 0em 0 0 5em;
     background-color: #ffffff;
     padding: 1em;
     opacity: 0;
