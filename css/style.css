@@ -41,6 +41,15 @@ iframe.youtube {
     aspect-ratio: 16/9;
 }
 
+div.qr {
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+}
+img.qr {
+    width: 30vw;
+}
+
 /*Page*/
 .subpage {
     display: none;
